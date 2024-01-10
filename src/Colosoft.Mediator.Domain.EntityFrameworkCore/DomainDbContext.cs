@@ -7,7 +7,8 @@ namespace Colosoft.Domain.EntityFrameworkCore
     {
         private readonly IMediator mediator;
 
-        protected DomainDbContext(IMediator mediator)
+        protected DomainDbContext(IMediator mediator, DbContextOptions options)
+            : base(options)
         {
             this.mediator = mediator;
         }

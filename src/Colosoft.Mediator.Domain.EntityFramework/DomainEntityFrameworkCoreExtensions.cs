@@ -8,7 +8,7 @@ namespace Colosoft.Domain
         public static async Task DispatchDomainEventsAsync(this IMediator mediator, DbContext ctx, CancellationToken cancellationToken)
         {
             var domainEntities = ctx.ChangeTracker
-                .Entries<Entity>()
+                .Entries<IDomainEventsContainer>()
                 .Where(x => x.Entity.DomainEvents != null && x.Entity.DomainEvents.Any());
 
             var domainEvents = domainEntities

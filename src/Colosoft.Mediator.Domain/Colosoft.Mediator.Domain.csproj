@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Colosoft.Domain.Core" Version="1.0.0" />
-    <PackageReference Include="Colosoft.Mediator" Version="1.0.0" />
+    <PackageReference Include="Colosoft.Domain.Core" Version="3.0.0" />
+    <PackageReference Include="Colosoft.Mediator" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
